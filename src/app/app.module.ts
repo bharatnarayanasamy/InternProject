@@ -22,8 +22,9 @@ import { JoshPageModule} from '../pages/josh/josh.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    BharatPageModule,
-    JoshPageModule
+    JoshPageModule,
+    BharatPageModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
