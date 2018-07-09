@@ -10,6 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 
 import { BharatPageModule } from '../pages/bharat/bharat.module';
+import { JoshPageModule} from '../pages/josh/josh.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { BharatPageModule } from '../pages/bharat/bharat.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    BharatPageModule
+    BharatPageModule,
+    JoshPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
