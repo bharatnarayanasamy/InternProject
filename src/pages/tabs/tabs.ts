@@ -13,6 +13,7 @@ export class TabsPage {
   tab2Root = JoshPage;
   tab3Root = SloanPage;
   //hi
+  //this is a test that I want to work
 
   constructor() {
 
