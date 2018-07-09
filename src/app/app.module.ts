@@ -10,7 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 
 import { BharatPageModule } from '../pages/bharat/bharat.module';
-import { JoshPageModule} from '../pages/josh/josh.module';
+
 
 
 @NgModule({
