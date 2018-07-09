@@ -10,6 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 
 import { JoshPageModule } from '../pages/josh/josh.module';
+import { SloanPageModule} from '../pages/sloan/sloan.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { JoshPageModule } from '../pages/josh/josh.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    JoshPageModule
+    JoshPageModule,
+    SloanPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
