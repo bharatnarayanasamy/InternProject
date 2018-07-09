@@ -9,7 +9,7 @@ import { BharatPage } from '../bharat/bharat';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = BharatPage;
+  tab7Root = BharatPage;
 
   constructor() {
 
