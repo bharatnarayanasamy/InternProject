@@ -14,5 +14,14 @@
 
 
 <ion-content padding>
-  This a page dedicated to how cool Josh is. Notice it is blank.
+  <ion-list>
+    <ion-item *ngFor="let post of postsProvider.posts">
+      <h1>
+      {{post.title}}
+      </h1>
+      <p>
+        {{post.content}}
+      </p>
+    </ion-item>
+  </ion-list>
 </ion-content>

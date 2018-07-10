@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 /*
@@ -10,8 +9,19 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class JoshPostsProvider {
 
-  constructor(public http: HttpClient) {
+  posts: any = [];
+
+  constructor() {
     console.log('Hello JoshPostsProvider Provider');
+  }
+
+  load(){
+    this.posts = [
+      {title: "Such a cool guy",
+        content: "This a page dedicated to how cool Josh is."},
+      {title: "Anoter Post",
+        content: "Just another post."}
+    ];
   }
 
 }
