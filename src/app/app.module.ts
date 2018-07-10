@@ -8,11 +8,9 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
-
 import { BharatPageModule } from '../pages/bharat/bharat.module';
 import { JoshPageModule } from '../pages/josh/josh.module';
-import { PostsProvider } from '../providers/posts/posts';
-
+import { SloanPageModule} from '../pages/sloan/sloan.module';
 
 
 @NgModule({
@@ -26,6 +24,7 @@ import { PostsProvider } from '../providers/posts/posts';
     IonicModule.forRoot(MyApp),
     JoshPageModule,
     BharatPageModule
+    SloanPageModule
 
 
   ],
