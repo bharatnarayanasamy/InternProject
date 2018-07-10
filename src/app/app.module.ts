@@ -10,6 +10,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 
 import { BharatPageModule } from '../pages/bharat/bharat.module';
+import { JoshPageModule } from '../pages/josh/josh.module';
+import { PostsProvider } from '../providers/posts/posts';
 
 
 
@@ -25,6 +27,7 @@ import { BharatPageModule } from '../pages/bharat/bharat.module';
     JoshPageModule,
     BharatPageModule
 
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,7 +38,8 @@ import { BharatPageModule } from '../pages/bharat/bharat.module';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    PostsProvider,
   ]
 })
 export class AppModule {}
