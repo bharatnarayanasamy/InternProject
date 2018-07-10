@@ -24,4 +24,12 @@ export class JoshPostsProvider {
     ];
   }
 
+  add(){
+    console.log("Add button clicked");
+  }
+
+  delete(){
+    console.log("Delete button clicked");
+  }
+
 }
