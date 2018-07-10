@@ -14,13 +14,13 @@
 
 
 <ion-content>
-  <button ion-button clear large (click)="post.add"><ion-icon name="add-circle"></ion-icon>New post</button>
+  <button ion-button clear large (click)="posts.add()"><ion-icon name="add-circle"></ion-icon>New post</button>
   <ion-list>
-    <ion-item *ngFor="let post of postsProvider.posts">
+    <ion-item *ngFor="let post of posts.posts">
       <div>
         <h1>
           {{post.title}}
-          <button [ngClass]="'center-button'" ion-button clear item-top (click)="post.delete"><ion-icon name="trash"></ion-icon></button>
+          <button [ngClass]="'center-button'" ion-button clear item-top (click)="posts.delete()"><ion-icon name="trash"></ion-icon></button>
         </h1>
       </div>
       <p>

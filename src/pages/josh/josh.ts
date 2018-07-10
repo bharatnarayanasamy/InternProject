@@ -16,12 +16,15 @@ import { JoshPostsProvider } from '../../providers/josh-posts/josh-posts';
 })
 export class JoshPage {
 
+  posts: any = null;
+
   constructor(public navCtrl: NavController, public postsProvider: JoshPostsProvider) {
+    this.posts = postsProvider;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad JoshPage');
-    this.postsProvider.load();
+    this.posts.load();
   }
 
 }
