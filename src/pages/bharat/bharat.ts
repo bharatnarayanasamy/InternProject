@@ -15,9 +15,10 @@ import { PostsProvider } from '../../providers/posts/posts';
 })
 export class BharatPage {
 
+  posts: any = null;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public posts: PostsProvider) {
-    
+  constructor(public navCtrl: NavController, public navParams: NavParams, public postsProv: PostsProvider) {
+    this.posts = postsProv;
   }
 
   ionViewDidLoad() {

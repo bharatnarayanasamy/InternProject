@@ -14,8 +14,22 @@
 
 
 <ion-content>
-  <ion-item *ngFor="let post of posts">
-    {{post.title}}
-    {{post.summary}}
-  </ion-item>
+  <ion-input type="text" placeholder="Title" [(ngModel)]="thetitle"> </ion-input>
+
+  <ion-input type="text" placeholder="Content" [(ngModel)]="thecontent"> </ion-input>
+
+  <button ion-button clear large (click)="posts.add(thetitle, thecontent)"><ion-icon name="add-circle"></ion-icon>New post</button>
+  <ion-list>
+    <ion-item *ngFor="let post of posts.posts">
+      <div>
+        <h1>
+          {{post.title}}
+          <button [ngClass]="'center-button'" ion-button clear item-top (click)="posts.delete(post)"><ion-icon name="trash"></ion-icon></button>
+        </h1>
+      </div>
+      <p>
+        {{post.end}}
+      </p>
+    </ion-item>
+  </ion-list>
 </ion-content>
