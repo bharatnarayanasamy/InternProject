@@ -13,6 +13,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { BharatPageModule } from '../pages/bharat/bharat.module';
 import { JoshPageModule } from '../pages/josh/josh.module';
 import { SloanPageModule} from '../pages/sloan/sloan.module';
+import { JoshPostsProvider } from '../providers/josh-posts/josh-posts';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { SloanPageModule} from '../pages/sloan/sloan.module';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    JoshPostsProvider
   ]
 })
 export class AppModule {}
