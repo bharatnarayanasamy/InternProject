@@ -9,8 +9,11 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
 
+
+import { BharatPageModule } from '../pages/bharat/bharat.module';
 import { JoshPageModule } from '../pages/josh/josh.module';
 import { SloanPageModule} from '../pages/sloan/sloan.module';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { SloanPageModule} from '../pages/sloan/sloan.module';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     JoshPageModule,
+    BharatPageModule
     SloanPageModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
