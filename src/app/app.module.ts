@@ -12,6 +12,8 @@ import { BharatPageModule } from '../pages/bharat/bharat.module';
 import { JoshPageModule } from '../pages/josh/josh.module';
 import { SloanPageModule} from '../pages/sloan/sloan.module';
 
+import { JoshPostsProvider } from '../providers/josh-posts/josh-posts';
+import { PostsProvider } from '../providers/posts/posts';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,8 @@ import { SloanPageModule} from '../pages/sloan/sloan.module';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     JoshPageModule,
-    BharatPageModule
+    BharatPageModule,
     SloanPageModule
-
-
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -39,6 +39,7 @@ import { SloanPageModule} from '../pages/sloan/sloan.module';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     PostsProvider,
+    JoshPostsProvider
   ]
 })
 export class AppModule {}

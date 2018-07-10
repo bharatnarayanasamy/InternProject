@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { PostsProvider } from '../../providers/posts/posts';
 /**
- * Generated class for the BharatPage page.
+ * Generated class for the LearningProvidersPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-bharat',
-  templateUrl: 'bharat.html',
+  selector: 'page-learning-providers',
+  templateUrl: 'learning-providers.html',
 })
-export class BharatPage {
+export class LearningProvidersPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public posts: PostsProvider) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BharatPage');
+      this.posts.load();
   }
 
 }
