@@ -19,7 +19,7 @@ export class JoshPage {
   posts: any = null;
 
   constructor(public navCtrl: NavController, public postsProvider: JoshPostsProvider) {
-    this.posts = postsProvider;
+    
   }
 
   ionViewDidLoad() {

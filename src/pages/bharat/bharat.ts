@@ -10,13 +10,14 @@ import { PostsProvider } from '../../providers/posts/posts';
 
 @IonicPage()
 @Component({
-  selector: 'page-learning-providers',
-  templateUrl: 'learning-providers.html',
+  selector: 'page-bharat',
+  templateUrl: 'bharat.html',
 })
-export class LearningProvidersPage {
+export class BharatPage {
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public posts: PostsProvider) {
+    
   }
 
   ionViewDidLoad() {
