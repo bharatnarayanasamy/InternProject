@@ -25,9 +25,8 @@ import { SloanPageModule} from '../pages/sloan/sloan.module';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     JoshPageModule,
-    BharatPageModule
+    BharatPageModule,
     SloanPageModule
-
   ],
   bootstrap: [IonicApp],
   entryComponents: [
